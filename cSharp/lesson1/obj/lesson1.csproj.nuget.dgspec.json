@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\cSharp\\lesson1\\lesson1.csproj": {}
+    "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\Flood\\cSharp\\lesson1\\lesson1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\cSharp\\lesson1\\lesson1.csproj": {
+    "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\Flood\\cSharp\\lesson1\\lesson1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\cSharp\\lesson1\\lesson1.csproj",
+        "projectUniqueName": "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\Flood\\cSharp\\lesson1\\lesson1.csproj",
         "projectName": "lesson1",
-        "projectPath": "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\cSharp\\lesson1\\lesson1.csproj",
+        "projectPath": "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\Flood\\cSharp\\lesson1\\lesson1.csproj",
         "packagesPath": "C:\\Users\\Константин\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\cSharp\\lesson1\\obj\\",
+        "outputPath": "C:\\Users\\Константин\\Documents\\Курсы\\geekBrains\\Знакомство с языками программирования\\Flood\\cSharp\\lesson1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Константин\\AppData\\Roaming\\NuGet\\NuGet.Config"
