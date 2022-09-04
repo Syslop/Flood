@@ -5,6 +5,7 @@ int secondNumber = 56;
 int thirdNumber = 11;
 */
 
+
 //for code with user
 Console.WriteLine("Please enter first number:");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
