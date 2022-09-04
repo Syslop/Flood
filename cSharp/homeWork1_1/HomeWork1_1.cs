@@ -1,5 +1,14 @@
-﻿int firstNumber = 8;
+﻿//for hardcode
+/*
+int firstNumber = 8;
 int secondNumber = 9;
+*/
+
+//for code with user
+Console.WriteLine("Please enter first number:");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter second number:");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 if (firstNumber > secondNumber)
 {
