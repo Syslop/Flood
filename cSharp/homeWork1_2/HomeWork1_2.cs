@@ -1,6 +1,17 @@
-﻿int firstNumber = 57;
+﻿//for hardcode
+/*
+int firstNumber = 57;
 int secondNumber = 56;
 int thirdNumber = 11;
+*/
+
+//for code with user
+Console.WriteLine("Please enter first number:");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter second number:");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter third number:");
+int thirdNumber = Convert.ToInt32(Console.ReadLine());
 
 
 if (firstNumber > secondNumber)
