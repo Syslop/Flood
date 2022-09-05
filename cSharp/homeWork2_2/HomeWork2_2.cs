@@ -1,4 +1,20 @@
-﻿//A complex solution to the problem. Type conversion is not used.
+﻿//A simple solution through type conversion.
+int randomNumber = new Random().Next(1, 55555);
+int requiredNumberOfCharacters = 3;
+
+Console.Write("Random number = ");
+Console.Write(randomNumber);
+Console.WriteLine();
+
+
+string randomNumberStr = Convert.ToString(randomNumber);
+int desiredNumber = int.Parse(Convert.ToString(randomNumberStr[requiredNumberOfCharacters - 1]));
+
+Console.Write("The desired number = ");
+Console.Write(desiredNumber);
+
+/*
+//A complex solution to the problem. Type conversion is not used.
 int randomNumber = new Random().Next(1, 55555);
 
 int requiredNumberOfCharacters = 3;
@@ -31,3 +47,4 @@ else
 {
     Console.WriteLine(tempNumberArray[1]);
 }
+*/
