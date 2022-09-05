@@ -1,4 +1,12 @@
-﻿//for hardcode
+﻿int Max(int arg1, int arg2, int arg3)
+{
+    int result = arg1;
+    if (arg2 > result) result = arg2;
+    if (arg3 > result) result = arg3;
+    return result;
+}
+
+//for hardcode
 
 int firstNumber = 57;
 int secondNumber = 56;
@@ -34,9 +42,11 @@ Console.WriteLine("Please enter ninthNumber number:");
 int ninthNumber = Convert.ToInt32(Console.ReadLine());
 */
 
+/*
 int max = firstNumber;
 
 //a direct solution in the forehead
+
 if (secondNumber > max) max = secondNumber;
 if (thirdNumber > max) max = thirdNumber;
 if (fourthNumber > max) max = fourthNumber;
@@ -45,5 +55,12 @@ if (sixthNumber > max) max = sixthNumber;
 if (seventhNumber > max) max = seventhNumber;
 if (eighthNumber > max) max = eighthNumber;
 if (ninthNumber > max) max = ninthNumber;
+*/
+
+int max1 = Max(firstNumber, secondNumber, thirdNumber);
+int max2 = Max(fourthNumber, fifthNumber, sixthNumber);
+int max3 = Max(seventhNumber, eighthNumber, ninthNumber);
+int max = Max(max1, max2, max3);
+
 
 Console.WriteLine(max);
