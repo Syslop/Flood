@@ -1,4 +1,12 @@
-﻿//A simple solution through type conversion.
+﻿/* task 13
+Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+645 -> 5
+78 -> третьей цифры нет
+32679 -> 6
+*/
+
+//A simple solution through type conversion.
 int randomNumber = new Random().Next(1, 55555);
 int requiredNumberOfCharacters = 3;
 
