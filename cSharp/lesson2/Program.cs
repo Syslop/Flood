@@ -1,10 +1,13 @@
-﻿int Max(int arg1, int arg2, int arg3)
+﻿int Max(int[] array)
 {
-    int result = arg1;
-    if (arg2 > result) result = arg2;
-    if (arg3 > result) result = arg3;
+    int result = array[0];
+    for (int i = 1; i < array.Length; i++)
+    {
+        if (array[i] > result) result = array[i];
+    }
     return result;
 }
+
 
 //for hardcode
 
@@ -42,6 +45,10 @@ Console.WriteLine("Please enter ninthNumber number:");
 int ninthNumber = Convert.ToInt32(Console.ReadLine());
 */
 
+//Array
+int[] array = {firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber, sixthNumber, seventhNumber, eighthNumber, ninthNumber};
+
+
 /*
 int max = firstNumber;
 
@@ -57,10 +64,15 @@ if (eighthNumber > max) max = eighthNumber;
 if (ninthNumber > max) max = ninthNumber;
 */
 
+/*
+//basic function
 int max1 = Max(firstNumber, secondNumber, thirdNumber);
 int max2 = Max(fourthNumber, fifthNumber, sixthNumber);
 int max3 = Max(seventhNumber, eighthNumber, ninthNumber);
 int max = Max(max1, max2, max3);
 
+//int max = Max(Max(firstNumber, secondNumber, thirdNumber), Max(fourthNumber, fifthNumber, sixthNumber), Max(seventhNumber, eighthNumber, ninthNumber));
+*/
+int max = Max(array);
 
 Console.WriteLine(max);
