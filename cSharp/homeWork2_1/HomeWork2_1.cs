@@ -8,13 +8,20 @@
 
 */
 
-int randomNumber = new Random().Next(100, 1000);
+//int number = new Random().Next(100, 1000);
+Console.WriteLine("Please enter three-digit number: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Random number = ");
-Console.Write(randomNumber);
+Console.Write(number);
 Console.WriteLine();
 
-int secondNum = (randomNumber / 10) % 10;
+FindSecondNum(number);
 
-Console.Write("A desired (second) number = ");
-Console.Write(secondNum);
+void FindSecondNum(int num1)
+{
+    int secondNum = (num1 / 10) % 10;
+
+    Console.Write("A desired (second) number = ");
+    Console.Write(secondNum);
+}
