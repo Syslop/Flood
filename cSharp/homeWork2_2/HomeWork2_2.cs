@@ -33,7 +33,9 @@ int wholePart = randomNumber / 10;
 
 int iterationCounter = 0;
 
-Console.WriteLine(randomNumber);
+Console.Write("Random number = ");
+Console.Write(randomNumber);
+Console.WriteLine();
 
 while ((wholePart != 0)) 
 {
@@ -53,6 +55,7 @@ if (requiredNumberOfCharacters - 1 > iterationCounter)
 } 
 else 
 {
-    Console.WriteLine(tempNumberArray[1]);
+    Console.Write("The desired number = ");
+    Console.Write(tempNumberArray[1]);
 }
 */
