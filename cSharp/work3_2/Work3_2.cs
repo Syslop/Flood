@@ -15,7 +15,7 @@ int x2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Please enter y2: ");
 int y2 = Convert.ToInt32(Console.ReadLine());
 
-int length = (int)Math.Sqrt(GetDelta(x1, x2)*GetDelta(x1, x2) + GetDelta(y1, y2)*GetDelta(y1, y2));
+int length = (int)Math.Sqrt(Math.Pow(GetDelta(x1, x2), 2) + Math.Pow(GetDelta(y1, y2), 2));
 
 Console.Write("Length = ");
 Console.Write(length);
