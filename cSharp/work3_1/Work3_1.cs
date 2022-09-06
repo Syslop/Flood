@@ -7,9 +7,9 @@
 Console.WriteLine("Please enter quarter number: ");
 int quarterNumber = Convert.ToInt32(Console.ReadLine());
 
-getCoordinate(quarterNumber);
+GetCoordinate(quarterNumber);
 
-void getCoordinate(int quarterNumber)
+void GetCoordinate(int quarterNumber)
 {
     if (quarterNumber == 1) 
     {
