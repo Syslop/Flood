@@ -7,3 +7,15 @@
 
 */
 
+Console.WriteLine("Please enter N: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+getCubeNumber(number);
+
+void getCubeNumber(int number)
+{
+    for (int i = 1; i <= number; i++)
+    {
+        Console.WriteLine($"Cube of number = {Math.Pow(i, 3)}");
+    }
+}
