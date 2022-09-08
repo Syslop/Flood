@@ -9,14 +9,27 @@
 */
 
 //int number = new Random().Next(1, 55555);
-Console.WriteLine("Please enter a five-digit number: ");
+
+Console.WriteLine("Please enter a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-CheckPolydrome(CreateVerificationArray(number));
+CheckPolydrome(CreateVerificationArray(number, GetLengthNumber(number)));
 
-int[] CreateVerificationArray(int number)
+int GetLengthNumber(int number)
 {
-    int arraySize = 5;
+    int lengthNumber = 1;
+    int wholePartNumber = number / 10;
+
+    while (wholePartNumber != 0)
+    {
+        lengthNumber++;
+        wholePartNumber = wholePartNumber / 10;
+    }
+    return lengthNumber;
+}
+
+int[] CreateVerificationArray(int number, int arraySize)
+{
     int[] verificationArray = new int[arraySize];
 
     for (int i = 0; i < verificationArray.Length; i++) 
