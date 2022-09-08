@@ -10,9 +10,9 @@
 Console.WriteLine("Please enter N: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-getCubeNumber(number);
+GetCubeNumber(number);
 
-void getCubeNumber(int number)
+void GetCubeNumber(int number)
 {
     for (int i = 1; i <= number; i++)
     {
