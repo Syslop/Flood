@@ -17,15 +17,15 @@ public class BalanceController {
     private final BankService bankService;
 
     @GetMapping("/{accountId}")
-    public BigDecimal getBalance(@PathVariable Long accountId) throws IllegalAccessException {
+    public BigDecimal getBalance(@PathVariable Long accountId) {
         return bankService.getBalance(accountId);
     }
 
-/*    @PostMapping("/add")
+    @PostMapping("/add")
     public BigDecimal getBalance(@RequestBody TransferBalance transferBalance) {
-        return bankService.addMoney(transferBalance.getTo(), transferBalance.getAmout());
+        return bankService.addMoney(transferBalance.getTo(), transferBalance.getAmount());
     }
-*/
+
     @PostMapping("/transfer")
     public void transfer(@RequestBody TransferBalance transferBalance) {
         bankService.makeTransfer(transferBalance);

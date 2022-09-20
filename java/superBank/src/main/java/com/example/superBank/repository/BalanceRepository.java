@@ -1,5 +1,6 @@
 package com.example.superBank.repository;
 
+import com.fasterxml.jackson.core.json.DupDetector;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
@@ -13,5 +14,17 @@ public class BalanceRepository {
 
     public BigDecimal getBalanceForId(Long accountId) {
         return storage.get(accountId);
+    }
+
+    public BigDecimal save(Long to, BigDecimal amount){
+        BigDecimal currentBalance = storage.get(to);
+        if (currentBalance == null) {
+            storage.put(to, amount);
+            return amount;
+        } else {
+            BigDecimal updateBalance = currentBalance.add(amount);
+            storage.put(to, updateBalance);
+            return updateBalance;
+        }
     }
 }

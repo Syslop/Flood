@@ -22,8 +22,8 @@ public class BankService {
 
     public void makeTransfer(TransferBalance transferBalance) {
     }
-/*
-    public BigDecimal addMoney(Long to, BigDecimal amout) {
+
+    public BigDecimal addMoney(Long to, BigDecimal amount) {
+        return balanceRepository.save(to, amount);
     }
-*/
 }
