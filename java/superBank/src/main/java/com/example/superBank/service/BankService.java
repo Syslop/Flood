@@ -15,14 +15,15 @@ public class BankService {
     public BigDecimal getBalance(Long accountId) {
         BigDecimal balance = balanceRepository.getBalanceForId(accountId);
         if (balance == null) {
-            throw new IllegalAccessException();
+            throw new IllegalArgumentException();
         }
         return balance;
     }
 
-    public BigDecimal addMoney(Long to, BigDecimal amout) {
-    }
-
     public void makeTransfer(TransferBalance transferBalance) {
     }
+/*
+    public BigDecimal addMoney(Long to, BigDecimal amout) {
+    }
+*/
 }
