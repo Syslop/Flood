@@ -20,10 +20,31 @@ public class BankService {
         return balance;
     }
 
-    public void makeTransfer(TransferBalance transferBalance) {
+    public BigDecimal addMoney(Long to, BigDecimal amount) {
+        BigDecimal currentBalance = balanceRepository.getBalanceForId(to);
+        if (currentBalance == null) {
+            balanceRepository.save(to, amount);
+            return amount;
+        } else {
+            BigDecimal updateBalance = currentBalance.add(amount);
+            balanceRepository.save(to, updateBalance);
+            return updateBalance;
+        }
     }
 
-    public BigDecimal addMoney(Long to, BigDecimal amount) {
-        return balanceRepository.save(to, amount);
+    public void makeTransfer(TransferBalance transferBalance) {
+        BigDecimal fromBalance = balanceRepository.getBalanceForId(transferBalance.getFrom());
+        BigDecimal toBalance = balanceRepository.getBalanceForId(transferBalance.getTo());
+        if (fromBalance == null || toBalance == null) {
+            throw new IllegalArgumentException("User not found");
+        }
+        if (transferBalance.getAmount().compareTo(fromBalance) > 0) {
+            throw new IllegalArgumentException("The amount on the account is not enough for the transfer.");
+        }
+        BigDecimal updatedFromBalance = fromBalance.subtract(transferBalance.getAmount());
+        BigDecimal updatedToBalance = toBalance.add(transferBalance.getAmount());
+
+        balanceRepository.save(transferBalance.getFrom(), updatedFromBalance);
+        balanceRepository.save(transferBalance.getTo(), updatedToBalance);
     }
 }
