@@ -19,8 +19,7 @@ public class BalanceController {
     }
 
     @PostMapping("/transfer")
-    public BigDecimal transfer(@PathVariable Long accountId,
-                                 @RequestBody BigDecimal amount) {
+    public BigDecimal transfer(@RequestBody TransferBalance transferBalance) {
 
     }
 }
