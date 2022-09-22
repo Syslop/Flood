@@ -15,6 +15,7 @@ int[] arrayNumber = new int[arrayLength];
 Console.WriteLine("Array after fill:");
 ArrayFill(arrayNumber);
 Console.WriteLine();
+GetSumElements(arrayNumber);
 
 void ArrayFill(int[] arrayNumber)
 {
@@ -23,4 +24,17 @@ void ArrayFill(int[] arrayNumber)
         arrayNumber[i] = new Random().Next(-5, 6);
         Console.Write($"{arrayNumber[i]} ");
     }
+}
+
+void GetSumElements(int[] arrayNumber)
+{
+    int numberOfElement = 1;
+    int sum = 0;
+
+    while (numberOfElement < arrayNumber.Length)
+    {
+        sum = sum + arrayNumber[numberOfElement];
+        numberOfElement = numberOfElement + 2;
+    }
+    Console.WriteLine($"Sum of odd elements = {sum}");
 }
