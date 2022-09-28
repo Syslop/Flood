@@ -33,14 +33,14 @@ int columns = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = new int[rows, columns];
 int[] checkArray = new int[array.Length];
-//int checkArrayPosition = 0;
+int checkArrayPosition = 0;
 
-//FillArrayRandomNumbers(array);
-//PrintArray(array);
+FillArrayRandomNumbers(array);
+PrintArray(array);
 
-//Console.WriteLine();
+Console.WriteLine();
 
-//PrintDictionary(array);
+PrintDictionary(array);
 
 //1
 
