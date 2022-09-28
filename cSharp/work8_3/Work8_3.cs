@@ -116,7 +116,7 @@ void PrintArray(int[,] array)
 }
 
 //2
-
+/*
 void PrintDictionary(int[,] array)
 {
     Dictionary<int, int> keyValuePairs = new Dictionary<int, int>();
@@ -142,3 +142,4 @@ void PrintDictionary(int[,] array)
         Console.WriteLine($"Element {element.Key} meet {element.Value}");
     }
 }
+*/
