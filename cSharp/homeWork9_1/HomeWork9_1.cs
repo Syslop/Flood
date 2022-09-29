@@ -13,7 +13,7 @@ int start = 1;
 
 Console.WriteLine(PrintNumber(start, end));
 
-string PrintNumber(long start, long end)
+string PrintNumber(int start, int end)
 {
     if (start == end)
     {
