@@ -64,15 +64,11 @@ bool Contain(int num)
     {
         if (num == checkArray[i]) 
         {
-             return true;
-        } 
-        else
-        {
-            checkArray[checkArrayPosition] = num;
-            checkArrayPosition++;
-            return false;
+            return true;
         } 
     }
+    checkArray[checkArrayPosition] = num;
+    checkArrayPosition++;
     return false;
 }
 
